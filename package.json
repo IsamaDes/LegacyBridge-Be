@@ -10,6 +10,7 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.5",
     "@types/http-errors": "^2.0.5",
+    "@types/ioredis": "^4.28.10",
     "@types/node": "^24.10.1",
     "@types/qs": "^6.14.0",
     "@types/range-parser": "^1.2.7",
@@ -26,6 +27,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^17.2.3",
+    "ioredis": "^5.8.2",
     "mongoose": "^9.0.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
