@@ -29,7 +29,7 @@ export async function getCachedData<T>(cacheKey: string): Promise<T | null> {
  * @param data - The data to cache
  * @param expirationInSeconds - How long to keep the data (default: 60 seconds)
  */
-export async function cacheData<T>(
+export async function setCacheData<T>(
   cacheKey: string, 
   data: T, 
   expirationInSeconds: number = 60
