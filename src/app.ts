@@ -2,10 +2,12 @@ import express from "express";
 import v1Customers from "./routes/v1/customers";
 import v2Customers from "./routes/v2/customers";
 import errorHandler from "./middlewares/errorHandler.js";
+import cors from "cors";
 
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 if (process.env.NODE_ENV !== "test") {
 //   app.use("/api-docs", post-man);
