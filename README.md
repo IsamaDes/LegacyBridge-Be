@@ -1,4 +1,11 @@
-FOLDER STRUCTURE
+# legacybridge-backend
+
+## Discription:
+
+Node integration service bridging legacy API -> modern endpoints (v2), with caching, retries, and versioning.
+
+## FOLDER STRUCTURE
+
 legacybridge-backend/
 ├── .github/workflows/ci.yml
 ├── docker-compose.yml (optional)
@@ -34,3 +41,11 @@ legacybridge-backend/
 │ └── legacyClient.test.ts
 ├── postman_collection.json
 └── README.md
+
+## Setup
+
+1. `cp .env.example .env` and fill values
+2. `npm ci`
+3. `npm run dev`
+
+## En
