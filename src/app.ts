@@ -7,11 +7,15 @@ import cors from "cors";
 
 const app = express();
 app.use(express.json());
-app.use(cors());
 
-if (process.env.NODE_ENV !== "test") {
-//   app.use("/api-docs", post-man);
-}
+app.use(
+  cors({
+    origin: ["https://legacybridge-frontend.vercel.app", "http://localhost:5173"],
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 app.get('/health', (req, res) => res.send('ok'));
 app.use('/v1', v1Customers);
